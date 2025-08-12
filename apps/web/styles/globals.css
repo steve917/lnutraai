@@ -1,0 +1,9 @@
+@import url("../../../brand/brand.css");
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--text); margin: 0; font-family: Inter, system-ui, Segoe UI, Roboto, Helvetica, Arial; }
+.container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+.card { background: var(--panel); border: 1px solid var(--border); border-radius: 16px; padding: 18px; margin: 12px 0; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 14px; border: 1px solid var(--border); border-radius: 10px; background: var(--brand); color: #001b10; cursor: pointer; }
+.btn:focus { outline: 3px solid #fff5; outline-offset: 2px; }
+.row { display: flex; gap: 12px; align-items: center; }
+.code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 12px; }

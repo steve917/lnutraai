@@ -1,0 +1,17 @@
+{
+  "name": "lnutra-ai",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:api": "uvicorn app.main:app --reload --host 0.0.0.0 --port 8080 --app-dir apps/api",
+    "dev:web": "pnpm --filter @lnutra/web dev",
+    "dev:marketing": "pnpm --filter @lnutra/marketing dev",
+    "dev:mobile": "pnpm --filter @lnutra/mobile start",
+    "build:web": "pnpm --filter @lnutra/web build",
+    "build:marketing": "pnpm --filter @lnutra/marketing build",
+    "test:api": "pytest -q apps/api",
+    "postinstall": "echo \"workspaces ready\""
+  }
+}

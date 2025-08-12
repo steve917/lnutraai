@@ -1,0 +1,11 @@
+:root{
+  --bg:#0b1512;
+  --panel:#0f1d18;
+  --border:#17332a;
+  --text:#d7f7ee;
+  --muted:#9fd7c7;
+  --brand:#2fe0b8;
+}
+a{ color: var(--brand); }
+input,button,select,textarea{ background: #07100d; color: var(--text); border: 1px solid var(--border); border-radius: 10px; padding: 8px 10px; }
+input:focus,button:focus,select:focus,textarea:focus{ outline: 3px solid #2fe0b84d; outline-offset: 2px; }
